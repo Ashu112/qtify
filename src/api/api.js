@@ -7,16 +7,24 @@ export const fetchTopAlbums = async () => {
     const res = await axios.get(`${BACKEND_ENDPOINT}/albums/top`);
     return res.data;
   } catch (e) {
-    console.log(e)
+    console.log(e);
   }
 };
 
-
-export const fetchNewAlbums = async ()=>{
-  try{
-    const res = await axios.get(`${BACKEND_ENDPOINT}/albums/new`)
+export const fetchNewAlbums = async () => {
+  try {
+    const res = await axios.get(`${BACKEND_ENDPOINT}/albums/new`);
     return res.data;
-  }catch(e){
-    console.log(e)
+  } catch (e) {
+    console.log(e);
   }
-}
+};
+
+export const fetchSongs = async () => {
+  try {
+    const res = await axios.get(`${BACKEND_ENDPOINT}/songs`);
+    return res.data;
+  } catch (e) {
+    console.log(e);
+  }
+};
