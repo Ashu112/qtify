@@ -35,10 +35,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <div className={styles.topAlbums}>
+      <div className={styles.sectionWrapper}>
         <Section data={topAlbumsData} type="album" title="Top Albums" />
-      </div>
-      <div className={styles.newAlbums}>
         <Section data = {newAlbumsData} type="album" title="New Albums"/>
       </div>
     </div>

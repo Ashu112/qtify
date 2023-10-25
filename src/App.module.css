@@ -1,7 +1,5 @@
-.newAlbums{
-    margin:30px;
-}
-
-.topAlbums{
-    margin:30px;
+.sectionWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
