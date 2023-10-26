@@ -28,6 +28,12 @@ function App() {
     } else if (value === 2) {
       key = "pop";
     }
+    else if (value === 3) {
+      key = "jazz";
+    }
+    else if (value === 4) {
+      key = "blues";
+    }
     const res = songData.filter((item) => item.genre.key === key);
     filteredData(res);
   };
@@ -101,7 +107,7 @@ function App() {
           title="Songs"
           filteredData={filteredData}
           filteredDataValues={filteredDataValues}
-          value={0}
+          value={value}
           handleChange={handleChange}
         />
       </div>
