@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import { fetchNewAlbums, fetchTopAlbums, fetchSongs } from "./api/api";
 import Section from "./components/Section/Section";
+import FAQ from "./components/FAQs/FAQ";
 
 function App() {
   const [topAlbumsData, setTopAlbumsData] = useState([]); // top albums data
@@ -110,6 +111,10 @@ function App() {
           value={value}
           handleChange={handleChange}
         />
+      </div>
+      <div className={styles.faqWrapper}>
+        <h1>FAQs</h1>
+        <FAQ/>
       </div>
     </div>
   );
